@@ -1,0 +1,335 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.about-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.image-div{
+  flex: 0 0 auto;
+  /* width: 33.33333333%; */
+  width: 400px;
+  /* padding-right: 20px; */
+}
+.image-div img{
+  width: 330px;
+  height:350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.about-infos{
+  width: 690px
+}
+.about-infos h2{
+  font-weight: 700;
+  font-size: 26px;
+  color: #999595;
+  font-family: "Raleway", sans-serif;
+  margin-bottom:10px;
+}
+.abt-info-p{
+  font-style: italic;
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-family: 'Josefin Sans';
+  line-height: 28px;
+}
+.infos-about-me{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 18px;
+}
+.BOD-div,
+.WEB-div,
+.Phone-div,
+.City-div,
+.Age-div,
+.Degree-div,
+.Email-div,
+.Freelance-div{
+  display: flex;
+  align-items: center;  
+  margin-bottom: 16px;
+}
+.BOD-div strong,
+.WEB-div strong,
+.Phone-div strong,
+.City-div strong,
+.Age-div strong,
+.Degree-div strong,
+.Email-div strong,
+.Freelance-div strong{
+  font-size: 18px;
+  font-family: Arial;
+  padding-right: 10px;
+}
+.BOD-div p,
+.WEB-div p,
+.Phone-div p,
+.City-div p,
+.Age-div p,
+.Degree-div p,
+.Email-div p,
+.Freelance-div p{
+  font-size: 16px;
+  font-family: Arial;
+  color: #d1d0d0;
+}
+
+/* skills div section */
+.typeof-skills-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:40px;
+  padding-bottom: 40px;
+}
+.skills-col{
+  flex: 0 0 auto;
+  width: 50%;
+  padding-right: 30px;
+}
+.progess{
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+}
+.skill{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  column-gap: 40px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.progress-bar{
+  width: 100%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #004278;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+#html-prg-bar{
+  width: 100%;
+}
+#css-prg-bar{
+  width: 100%;
+}
+#tailwind-prg-bar{
+  width: 65%;
+}
+#js-prg-bar{
+  width: 80%;
+}
+#react-js-prg-bar{
+  width: 40%;
+}
+#fire-data-prg-bar{
+  width: 70%;
+}
+.progress-bar-wrap{
+  background: #d6d6d6;
+  border-radius: 5px;
+}
+/* tablet screen size  */
+@media screen and (max-width: 768px){
+  html,
+  body{
+    width: 100%;
+  }
+  /* #about-overlay {
+    padding: auto 100px;
+  } */
+  #resp-sty,
+  #skill-resp-sty{
+    font-size: 18px;
+    width: 100px;
+  }
+  .image-div {
+    width: 100%;
+  }
+  .image-div img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .about-infos {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .infos-about-me {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .typeof-skills-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .skills-col {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+/* Phone screen size */
+@media screen and (max-width: 600px){
+  html,
+  body{
+    width: 100%;
+    overflow-y: auto;
+    height: 100%
+  }
+  .skills-col {
+    width: 100%;
+    padding-right: 0;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  #about-overlay{
+    width: 100%;
+    padding:130px 30px;
+  }
+  .about-content{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 50px;
+    width: 100%;
+  }
+  .image- div{
+    /* flex:1; */
+    /* width: 33.33333333%; */
+    width: 400px;
+    /* padding-right: 20px; */
+  }
+  .image-div img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .about-infos{
+    width: 100%;
+  }
+  .about-infos h2{
+    font-weight: 700;
+    font-size: 26px;
+    color: #999595;
+    font-family: "Raleway", sans-serif;
+    margin-bottom:10px;
+  }
+  .abt-info-p{
+    font-style: italic;
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 28px;
+  }
+  .infos-about-me{
+    align-items: flex-start;
+    column-gap: 20px;
+    margin-bottom: 18px;
+  }
+  .BOD-div,
+  .WEB-div,
+  .Phone-div,
+  .City-div,
+  .Age-div,
+  .Degree-div,
+  .Email-div,
+  .Freelance-div{
+    display: flex;
+    align-items: center;  
+    margin-bottom: 16px;
+  }
+  .BOD-div strong,
+  .WEB-div strong,
+  .Phone-div strong,
+  .City-div strong,
+  .Age-div strong,
+  .Degree-div strong,
+  .Email-div strong,
+  .Freelance-div strong{
+    font-size: 18px;
+    font-family: Arial;
+    padding-right: 10px;
+  }
+  .BOD-div p,
+  .WEB-div p,
+  .Phone-div p,
+  .City-div p,
+  .Age-div p,
+  .Degree-div p,
+  .Email-div p,
+  .Freelance-div p{
+    font-size: 16px;
+    font-family: Arial;
+    color: #d1d0d0;
+  }
+
+  /* skills div section */
+  .typeof-skills-div{
+    margin-top:40px;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .Skills-div {
+    width: 100%;
+  }
+  .skills-col{
+    flex: 0 0 auto;
+    /* width: 50%; */
+    /* padding-right: 30px; */
+    width: 100%;
+  }
+  .progess{
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+  }
+  .skill{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    column-gap: 40px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+  }
+  .progress-bar{
+    width: 100%;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #004278;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  #css-prg-bar,
+  #ms-word-prg-bar{
+    width: 90%;
+  }
+  #js-prg-bar,
+  #ms-excel-prg-bar{
+    width: 65%;
+  }
+  #py-prg-bar{
+    width: 40%;
+  }
+  .progress-bar-wrap{
+    background: #d6d6d6;
+    border-radius: 5px;
+  }
+}

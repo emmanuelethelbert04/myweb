@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px){
+  html,
+  body{
+    width: 100%;
+    overflow-y: auto;
+    height: 100%
+  }
+  #project-overlay {
+    padding: 130px 20px;
+  }
+}  
+
+.pj-btn2  {
+  background: #004278;
+  border: 2px solid transparent;
+  color: #ffff;
+  /* transition: background 0.5s ease-in-out; */
+}
+
+.pj-btn2:hover{
+  background-color: transparent !important;
+  border: 2px solid #004278 !important;
+  color: #004278 !important;
+}

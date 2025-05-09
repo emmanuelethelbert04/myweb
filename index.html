@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>     
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>  
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <title>Masatech Portfoilo & Web Services</title>
+  </head>
+
+  <body>
+    <!-- Navgation section  -->
+    <div class="header">
+      <a href="index.html" class="brand">
+        <img src="images/masatech brand.png">
+        <!-- <span>Masa <bold>Tech</bold></span> -->
+      </a>
+
+      <nav class="js-navbar">
+        <ul id="navbar">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Projects.html">Project</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+
+        <div class="social-contact">
+          <a href="https://x.com/MasaTECH04">
+            <img src="images/x-icon.svg" height="31px">
+          </a>
+          <a href="https://github.com/emmanuelethelbert04/">
+            <img src="images/github.png" height="31px">
+          </a>
+          <a href="https://www.linkedin.com/in/ethelbertemmanuel04/">
+            <img src="images/linkdin-icon.svg" height="31px">
+          </a>
+        </div>
+      </nav>
+
+      <div>
+        <input type="checkbox" id="menyAvPaa" hidden>
+        <label id="burger" for="menyAvPaa" class="js-menu">
+          <div class="js-div"></div>
+          <div class="js-div"></div>
+          <div class="js-div"></div>
+        </label>
+      </div>
+    </div>
+
+    <main>
+      <!-- Landing/Hero seciton  -->
+      <section class="home-section" id="Page1">
+        <div id="hero">
+          <div class="bg-image">
+            <img src="images/lanp.jpg" class="img-lap">        
+          </div>
+
+          <!-- Square animation on the code -->
+          <div class="fade-background">
+            <div class="div-background fade-sequence">
+            </div>
+            <div class="div2-background fade-sequence">
+            </div>
+            <div class="div3-background fade-sequence">
+            </div>
+            <div class="div4-background fade-sequence">
+            </div>
+            <div class="div5-background fade-sequence">
+            </div>
+          </div> 
+
+          <div id="overlay">
+            <div class="content js-content">
+
+              <!-- the text content section  -->
+              <div>
+                <h1 class="title">
+                  You're Welcome
+                </h1>
+                <p> 
+                  Feel free to look around my website and you will kwnow What I'm good at. I'm a Fontend developer and passionated person, making high quality designed product using HTML, CSS,  Javascript and their  frameworks.
+                </p> 
+              </div>
+
+              <!-- button div section  -->
+              <div>
+                <button class="btn2 js-contact-btn">Contact me</button>
+                
+                <a href="certificate/masatech cv.pdf" download>
+                  <button class="btn3" >Review CV</button>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

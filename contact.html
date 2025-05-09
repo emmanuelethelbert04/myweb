@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Masatech Portfoilo & Web Services</title>
+    <!-- <link rel="stylesheet" href="styles/portfolio.css"> -->
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <!-- installration on EmailJs Api for sending message to an Email -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://kit.fontawesome.com/1c8247bb1b.js" crossorigin="anonymous"></script>
+
+
+    <!-- <script type="text/Javascript" src="https://cdn.jsdeliver.net/npm/@emailjs/browser@3/dist/email.min.js">
+      <script type="text/javascript">
+        (function() {
+          emailjs.init('R6DIsCxYSvRAjG-QE');
+        })();
+      </script>
+    </script> -->
+  </head>
+
+  <body>
+    <!-- Navgation section  -->
+    <div class="header">
+      <a href="index.html" class="brand">
+        <img src="images/masatech brand.png">
+      </a>
+
+      <nav class="js-navbar">
+        <ul id="navbar">
+          <li id="list"><a href="index.html">Home</a></li>
+          <li id="list"><a href="about.html">About</a></li>
+          <li id="list"><a href="Projects.html">Project</a></li>
+          <li id="list"><a class="active" href="contact.html">Contact</a></li>
+          <!-- <button class="contact-btn"> Contact me</button> -->
+        </ul>
+
+        <div class="social-contact">
+          <a href="https://x.com/MasaTECH04">
+            <img src="images/x-icon.svg" height="31px">
+          </a>
+          <a href="https://github.com/emmanuelethelbert04/">
+            <img src="images/github.png" height="31px">
+          </a>
+          <a href="https://www.linkedin.com/in/ethelbertemmanuel04/">
+            <img src="images/linkdin-icon.svg" height="31px">
+          </a>
+        </div>
+      </nav>
+
+      <div>
+        <input type="checkbox" id="menyAvPaa" hidden>
+        <label id="burger" for="menyAvPaa" class="js-menu">
+          <div class="js-div"></div>
+          <div class="js-div"></div>
+          <div class="js-div"></div>
+        </label>
+      </div>
+    </div>
+
+    <section class="contact-section">
+      <div class="overLay" id="contact-overlay">
+        <div class="my-contact-div">
+          <div class="my-contact-title">
+            <div class="vertical-line"></div>
+            <p class="contact-text">Reach Out</p>
+          </div>
+    
+          <p class="contact-paragraph" id="contact-paragraph-id">I'm here to help! Whether you're interested in my work or just want to say hi, feel free to connect.</p>
+        </div>
+
+        <div class="contact-div">
+          <!-- The contact area code  -->
+          <div class="contact-row">
+            <div class="location-div">
+              <div class="location-icon-div">
+                <!-- <img src="images/fb.png" alt="" width="11px"> -->
+                <i class="fa-solid fa-location-dot"  style="color: #004278;"></i>
+              </div>
+              <div class="location-info">
+                <strong class="location-text">Location:</strong>
+                <p class="location-area">
+                  Owerri Imo State
+                </p>
+              </div>
+            </div>
+
+            <div class="Email-div">
+              <div class="Email-icon-div">
+                <i class="fa-solid fa-envelope" style="color: #004278;"></i>
+              </div>
+              <div class="Email-info">
+                <strong class="Email-text">Email:</strong>
+                <p class="Email-area">
+                  ethelbertemmanuel1@gmail.com
+                </p>
+              </div>
+            </div>
+
+            <div class="call-div">
+              <div class="call-icon-div">
+                <i class="fa-solid fa-phone" style="color: #004278;"></i>
+              </div>
+              <div class="call-info">
+                <strong class="call-text">Call</strong>
+                <p class="call-area">
+                  +234 7061126730
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- The message area code  -->
+          <div class="message-row">
+            <div>
+              <div class="name-email-div">
+                <input type="text" placeholder="Your Name" class="name-input">
+                <input type="email" placeholder="Your Email" class="email-input">
+              </div>
+
+              <div class="subject-message-div">
+                <input type="text" placeholder="Your Subject" class="subject-input">
+                <textarea placeholder="Your Message" class="message-input"></textarea>
+              </div>
+              <p class="input-error" id="js-input-error"></p>
+            </div>
+            <div class="message-div">
+              <button class="message-btn" id="send-msg">
+                <!-- <img src="images/send.svg" alt="" width="18px"> -->
+                  Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="scripts/resume.js"></script>
+    <script src="scripts/contact.js"></script>
+  </body>
+</html>
